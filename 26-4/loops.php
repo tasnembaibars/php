@@ -2,63 +2,56 @@
 
 
 //Q1
-$sum=0
-for($i=0;$i<=30;$i++){
-    echo $i++ . "</br>";
+$sum=0;
+for($i=0;$i<=30;){
+   
    $sum += $i;
+   echo $i++ . " ";
 }
-echo "The sum of the numbers 0 to 30 is $sum"."\n";
+echo "The sum of the numbers 0 to 30 is $sum";
 
-echo . "</br>";
-//Q2
-for($i=1;$i<=5;$i++){
-    for($j=1;$j<=5;$j++){
-        echo 'A';
-    }
-}
-echo . "</br>";
 
-//Q3
-
-echo . "</br>";
+echo "</br>";
 
 //Q4
 for($i=0;$i<=5;$i++){
-  for($j=0;$j<=5;$j++){
-    if($i==$j ){
-        echo $i;
-    }else{
-        echo 0;
+    for($j=0;$j<=5;$j++){
+      if($i==$j ){
+          echo $i ."</br>";
+      }else{
+          echo 0;
+      }
     }
   }
-}
-echo . "</br>";
+  echo  "</br>";
 
 //Q5
 $n=5;
 $frac=1;
-for($i=1;$i<=$n;$i--){
+for($i=$n;$i>=1;$i--){
     $frac=$frac*$i;
 }
-echo 'The fractional number for $n is $frac';
+echo 'The fractional number for'.''. $n .'is'. $frac;
 
-echo . "</br>";
+echo "</br>";
 
-//Q6
-$n=1;
-$fib=0
-if($n<=1){
-    echo $fib=($n-1)+($n+1);
+// Q6
+$n=0;
+$fib=0;
+for($i=$n;$i<=10;$i++){
+    echo $fib;
+    echo $fib=($i-1)+($i+1) ." ";
+   
 }
 
-echo . "</br>";
-
+echo  "</br>";
 //Q9
-$n=1;
+$n=5;
 $value=1;
-for($i=1;$i>0;$i--){
-    for($j=1;$j<=$i;$j++){
-    echo $value;
+for($i=$n;$i>0;$i--){
+    for($j=$i;$j<$n+1;$j++){
+    echo $value .' ';
     $value ++;
     }
+    echo "</br>";
 }

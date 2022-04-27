@@ -5,11 +5,11 @@ $colors = array('white', 'green', 'red');
 echo "<ul>";
 
 for ($i=0;$i<count($colors);$i++){
- echo "<li>" . $colors[$i] ."</li>";
+ echo "<li>" . $colors[$i]  ."</li>";
 }
 echo "</ul>";
 
-echo ."</br>";
+echo "</br>";
 
 //Q2 
 $cities= array( "Italy"=>"Rome",
@@ -29,9 +29,9 @@ $cities= array( "Italy"=>"Rome",
 
 
  foreach($cities as $key => $value){
-     echo "The capital of  $key is $value";
+     echo "The capital of  $key is $value"."</br>";
  }
- echo ."</br>";
+ echo "</br>";
 
 //Q3
 $color = array (4 => 'white', 6 => 'green', 11=> 'red'); 
@@ -39,7 +39,7 @@ foreach($color as $key => $value){
     echo $value[0];
 }
 
-echo ."</br>";
+echo "</br>";
 
 //Q4
 
@@ -49,7 +49,7 @@ foreach($fruits as $key => $value){
     echo $key . "=". $value ."</br>";
 }
 
-echo ."</br>";
+echo "</br>";
 
 //Q8 
 $words =  array("abcd","abc","de","hjjj","g","wer");
